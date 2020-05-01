@@ -1,0 +1,9 @@
+version: "3"
+services:
+  shell:
+    build: ./shell
+    volumes:
+      - ./shell:/src
+    image: shell
+    environment:
+      - "TOKEN=${TOP_TOKEN}"
